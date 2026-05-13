@@ -877,7 +877,8 @@ footer .byline { font-family: var(--serif); font-size: 14px; font-style: italic;
     var d = (BENCHMARKS[currency] || BENCHMARKS.INR)[preset] || BENCHMARKS.INR.d2c;
     var map = { d_price:d.price, d_cogs:d.cogs, d_shipping:d.shipping,
       d_feesPct:d.feesPct, d_returnPct:d.returnPct, d_cac:d.cac,
-      d_ltpurchases:d.ltpurchases, d_salvagePct:d.salvagePct };
+      d_ltpurchases:d.ltpurchases, d_salvagePct:d.salvagePct,
+      d_rtoCost:d.rtoCost};
     Object.keys(map).forEach(function(id) {
       var el = document.getElementById(id);
       if (el) el.value = map[id];
